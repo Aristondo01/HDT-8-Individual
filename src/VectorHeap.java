@@ -1,9 +1,8 @@
-import java.util.PriorityQueue;
 import java.util.Vector;
 
 /*Esta interface se obutvo del material proporcionado en clase*/
 
-public class VectorHeap<E extends Comparable<E>> implements PQ<E> {
+public class VectorHeap<E extends Comparable<E>> implements PriorityQueue<E> {
 
     @Override
         public E getFirst() {

@@ -1,7 +1,7 @@
 
 /*Esta interface se obutvo del material proporcionado en clase*/
 
-public interface PQ<E extends Comparable<E>>{
+public interface PriorityQueue<E extends Comparable<E>>{
 
     public E getFirst();
     // pre: !isEmpty()
