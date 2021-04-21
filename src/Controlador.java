@@ -1,3 +1,4 @@
+import java.util.PriorityQueue;
 import java.util.Vector;
 
 public class Controlador
@@ -21,6 +22,23 @@ public class Controlador
             Persona p = (Persona) ImplementacionPropia.remove();
             System.out.println("Paciente No."+(j+1)+" "+p.getNombre()+" con sintomas de "+p.getSintomas());
         }
+
+        PriorityQueue<Persona> pq = new PriorityQueue();
+        for (int j=0;j<i;j++)
+        {
+            pq.add((Persona) pacientes.get(j));
+        }
+
+        System.out.println("\n\nPriorityQueue implementación JCF los resultados son:");
+
+        for (int j=0; j<i;j++)
+        {
+            Persona p = pq.remove();
+            System.out.println("Paciente No."+(j+1)+" "+p.getNombre()+" con sintomas de "+p.getSintomas());
+        }
+
+
+
 
     }
 }
