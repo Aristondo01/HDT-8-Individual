@@ -20,7 +20,7 @@ public class Controlador
         for (int j=0; j<i;j++)
         {
             Persona p = (Persona) ImplementacionPropia.remove();
-            System.out.println("Paciente No."+(j+1)+" "+p.getNombre()+" con sintomas de "+p.getSintomas());
+            System.out.println("Paciente No."+(j+1)+" "+p.getNombre()+" con sintomas de "+p.getSintomas()+" prioridad: "+p.Prioridad);
         }
 
         PriorityQueue<Persona> pq = new PriorityQueue();
@@ -34,7 +34,7 @@ public class Controlador
         for (int j=0; j<i;j++)
         {
             Persona p = pq.remove();
-            System.out.println("Paciente No."+(j+1)+" "+p.getNombre()+" con sintomas de "+p.getSintomas());
+            System.out.println("Paciente No."+(j+1)+" "+p.getNombre()+" con sintomas de "+p.getSintomas()+" prioridad: "+p.Prioridad );
         }
 
 
